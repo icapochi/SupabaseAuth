@@ -2,7 +2,7 @@ import { Button, FormControl, FormLabel, Input, useToast, VStack } from '@chakra
 import { useState, useEffect } from 'react'
 import { supabase } from '../supabaseClient'
 
-const Account = ({session}) => { //session is based off the one time link (?)
+const Account = ({session}) => { //session is based off user's authentication status
     const [loading, setLoading] = useState(true)
     const [username, setUsername] = useState(null)
     const [firstName, setFirstName] = useState(null)
